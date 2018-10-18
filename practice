@@ -1,0 +1,10 @@
+when  connecting host using putty
+
+Disconnected: No supported authentication methods available (server sent: publickey,gssapi-keyex
+
+https://www.linuxbookcenter.com/no-supported-authentication-methods-available/
+vi /etc/ssh/sshd_config
+PasswordAuthentication no
+PasswordAuthentication yes
+systemctl restart sshd
+systemctl restart network
