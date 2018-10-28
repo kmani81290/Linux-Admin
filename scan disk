@@ -1,0 +1,5 @@
+ls -l /sys/class/scsi_host/
+grep mpt /sys/class/scsi_host/host?/proc_name
+/sys/class/scsi_host/host2/proc_name:mptspi
+echo "- - -" > /sys/class/scsi_host/host2/scan
+fdisk -l
