@@ -1,1 +1,6 @@
 https://www.linuxtechi.com/setup-local-yum-dnf-repository-rhel-8/
+
+
+Step 1
+mount /dev/sr0 /opt
+cp -v /opt/media.repo /etc/yum.repos.d/rhel8.repo
