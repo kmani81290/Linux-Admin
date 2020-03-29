@@ -1,0 +1,10 @@
+Step : 1 : 
+
+#yum update
+#yum install httpd
+#cd /var/www/html
+#vi index.html
+   <html><h1>hello</h1></html>
+#service httpd start
+#chkconfig on
+      if reboots accidentially, httpd turn on automatically
