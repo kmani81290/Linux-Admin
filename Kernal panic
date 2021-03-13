@@ -5,3 +5,28 @@ The only way to recover from a kernel panic is to restart your computer.
 
 NOTE: Kernel panics are often caused by hardware communication issues. Therefore, if your computer is producing repeated kernel panics,
 try unplugging unnecessary devices to see if that fixes the problem.
+
+
+
+----------------------------
+
+initramfs file is corrupted or deleted  this kernal panic will occur.
+initramfs img file if deleted its happening
+
+solution:
+
+go to rescue mode while booting
+
+befor booting check whether the initramfs img is placed on /boot/
+and check kernel version usning uname -r
+just copy comewhere
+
+use below commands to rectify the kernel panic issue
+
+dracut initramfs kernal.img kernal
+it will some time img file will placed on /boot
+
+if you want --force the img file 
+use below cmd
+mkinitrd --force initramfs.kernel.ing kernel
+it hopes run
