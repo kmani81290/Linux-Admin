@@ -23,3 +23,60 @@ grep '[0-9]' profile.txt
 grep '[.]' profile.txt
 grep 're*d' red.txt
 grep 'z*' red.txt
+
+
+Network
+==========================
+ping -c 4 192.168.1.2
+
+
+Text Editor 
+=========================
+h 	Left one character
+j 	Down one line
+k 	Up one line
+l 	Right one character
+w 	One word forward
+b 	One word back
+^ 	Beginning of line
+$ 	End of the line
+
+
+dd 	Delete current line
+3dd 	Delete the next three lines
+dw 	Delete the current word
+d3w 	Delete the next three words
+d4h 	Delete four characters to the left
+---Delete whole page---
+    Go to command mode in the editor by pressing ESC key on the keyboard.
+    Press gg. It will take to the first line of the file.
+    Then press dG. This will delete from the first line to the last line.
+
+cc 	Change current line
+cw 	Change current word
+c3w 	Change the next three words
+c5h 	Change five characters to the left
+
+yy 	Yank current line
+3yy 	Yank the next three lines
+yw 	Yank the current word
+y$ 	Yank to the end of the line
+
+p 	Put (paste) after cursor
+P 	Put before cursor
+
+a 	Enter insert mode right after the cursor
+A 	Enter insert mode at the end of the line
+i 	Enter insert mode right before the cursor
+I 	Enter insert mode at the beginning of the line
+o 	Enter insert mode on a blank line after the cursor
+O 	Enter insert mode on a blank line before the cursor
+
+:w 	Write the current file to the filesystem
+:w filename 	Save a copy of the current file as filename
+:w! 	Force writing to the current file
+:1 	Go to line number 1 or whatever number is given
+:e filename 	Open filename
+:q 	Quit if no changes made to file
+:q! 	Quit without saving changes to file
+
