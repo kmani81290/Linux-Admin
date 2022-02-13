@@ -8,3 +8,16 @@ PasswordAuthentication no
 PasswordAuthentication yes
 systemctl restart sshd
 systemctl restart network
+
+
+grep cmds and finds
+===========================
+grep 'root' passwd
+grep '^root' /etc/passwd
+grep 'r$' alpha-first.txt
+grep 'r..f' red.txt
+grep '[0-9]' profile.txt
+grep '....' red.txt  
+grep 'r..t' /etc/passwd
+grep '[0-9]' profile.txt
+
