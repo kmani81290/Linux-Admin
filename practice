@@ -80,3 +80,9 @@ O 	Enter insert mode on a blank line before the cursor
 :q 	Quit if no changes made to file
 :q! 	Quit without saving changes to file
 
+
+
+
+running logs view
+=================================
+tail -f log.txt
