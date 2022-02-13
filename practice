@@ -20,4 +20,6 @@ grep '[0-9]' profile.txt
 grep '....' red.txt  
 grep 'r..t' /etc/passwd
 grep '[0-9]' profile.txt
-
+grep '[.]' profile.txt
+grep 're*d' red.txt
+grep 'z*' red.txt
