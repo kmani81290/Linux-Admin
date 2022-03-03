@@ -1,1 +1,7 @@
+##list out all the users in Linux
 awk -F':' '{ print $1 }' /etc/passwd
+##get the ID of any username
+id username
+##change the user ID for a user
+usermod  -u new_id username
+
