@@ -5,3 +5,5 @@ id username
 ##change the user ID for a user
 usermod  -u new_id username
 
+--top memory utilization
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
