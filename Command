@@ -1,0 +1,25 @@
+ls
+ls -l
+ls -a  -+-+---+-+-+-+-++-+-+-+-+-+-++-hidden files
+cat file.txt > hello -+-++-+-+-++-+- esc ctl c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
