@@ -53,7 +53,7 @@ Rsync
 •	Efficiency: It transfers only the differences between the source and the destination, making it faster and more efficient, especially for large datasets.
 •	Flexibility: Rsync offers many options for customization, including compression and preserving file permissions.
 •	Syntax:rsync -avz /path/to/local/dir/ user@remote_host:/path/to/remote/dir/
-
+============================================================================================================================================================================
 
 
 What you will do if SCP transfer got failed partially while  transferring
@@ -121,10 +121,12 @@ Uname -r
 Dmidecode 
 Lscpu,  Proc/cpuinfo
 Sudo dmidecode -t processor | grep ‘core count’
+============================================================================================================================================================================
 Flavors in linux
 Centos, redhat, fedora, linuxmint ect.,
 6 stages of boot process
 Bios, 	mbr, grub, kernel, init, run level
+============================================================================================================================================================================
 How to reset root password in linux
 Access grub menu : default boot loader press shift key and esc bring up grub menu
 Enter e for edit mode
@@ -133,8 +135,10 @@ Remount the file system with write permission    mount -n -o remount, rw /
 Now reset the passwd        cmd like passwd root
 And enter the passwd
 In the normall mode press sync and reboot -f
+============================================================================================================================================================================
 What is swap space
 to expand ram linux uses this extra space to concurrently running programs programs temporarily
+============================================================================================================================================================================
 What is the difference between redhat and ubuntu
 Redhat primarly used for business and enterprise
 Ubuntu developed by canonical it targets a broder audience, including a individual users, developers and enterprise. Ubuntu us user friendly 
@@ -142,6 +146,7 @@ Redhat uses yum and rpm install packages
 Ubuntu for apt uses Debian packages
 Redhat required licencing for update and support
 Ubuntu free to use and download, commercial available but not mandatory
+============================================================================================================================================================================
 Downgrade kernel
 Rpm -qa | grep kernel |sort      to see installed kernels
 Sudo yum install kernel-<version>        install desired kernel version
