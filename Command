@@ -9,3 +9,8 @@
       If you change the file’s permissions, all hard links reflect that change.
     - A soft link (symlink) is just a pointer to the original file. The symlink itself always has lrwxrwxrwx, 
       but actual access is controlled by the target file’s permissions.
+
+3. How do you secure /etc/shadow and why is it important?
+    - /etc/shadow stores password hashes, so it must be strictly protected. It should be owned by root:shadow with 640 or 400 permissions, 
+      so only privileged processes can read it. If permissions are misconfigured, an attacker could brute force password hashes offline, 
+      which would compromise the system.
