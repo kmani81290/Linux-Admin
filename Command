@@ -1,25 +1,5 @@
-ls
-ls -l
-ls -a  -+-+---+-+-+-+-++-+-+-+-+-+-++-hidden files
-cat file.txt > hello -+-++-+-+-++-+- esc ctl c
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. how do you access control list (ACL's) in linux of permission
+    - ACLs allow permissions beyond the traditional user/group/others model. I use setfacl to add specific permissions. For example:
+    Ex: setfacl -m u:john:rwx file.txt
+    - This gives user john read/write/execute access, regardless of the normal mode bits. I check them with getfacl file.txt. 
+    ACLs are especially useful in shared environments where multiple users need different levels of access without changing group ownership.
