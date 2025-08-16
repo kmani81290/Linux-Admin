@@ -3,3 +3,9 @@
     Ex: setfacl -m u:john:rwx file.txt
     - This gives user john read/write/execute access, regardless of the normal mode bits. I check them with getfacl file.txt. 
     ACLs are especially useful in shared environments where multiple users need different levels of access without changing group ownership.
+
+2. Can you explain the difference between a hard link and a soft (symbolic) link in terms of permissions?
+    - A hard link points directly to the inode of a file, so it shares the same permissions and ownership as the original file. 
+      If you change the file’s permissions, all hard links reflect that change.
+    - A soft link (symlink) is just a pointer to the original file. The symlink itself always has lrwxrwxrwx, 
+      but actual access is controlled by the target file’s permissions.
