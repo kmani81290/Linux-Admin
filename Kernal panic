@@ -1,10 +1,8 @@
-Kernel Panics
-Since the kernel handles the most basic functions of a computer, if it crashes it can take down the entire computer. 
-This undesirable event is called a "kernel panic" on macOS and Unix systems. It is similar to the blue screen of death in Windows. 
-The only way to recover from a kernel panic is to restart your computer.
+“I faced a kernel panic issue where the system failed to boot because the initramfs image was missing or corrupted. The initramfs is critical because it contains the minimal environment required for the kernel to mount the root filesystem.
 
-NOTE: Kernel panics are often caused by hardware communication issues. Therefore, if your computer is producing repeated kernel panics,
-try unplugging unnecessary devices to see if that fixes the problem.
+I booted into rescue mode, checked the kernel version using uname -r, and verified that the corresponding initramfs image under /boot was missing. To fix it, I rebuilt the initramfs using dracut --force /boot/initramfs-<version>.img <version>. After regenerating the image and rebooting, the system came up normally.
+
+This issue typically happens after incomplete updates or accidental deletion, so I also verified package integrity afterward. This ensured the kernel and initramfs were properly aligned.”
 
 
 
