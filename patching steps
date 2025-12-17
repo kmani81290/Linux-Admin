@@ -1,0 +1,13 @@
+“Usually I follow a standard patch management process across all Linux servers.
+
+First, I prepare and plan. I review the vulnerability reports and OS advisories shared by the security team and identify which servers and packages are in scope for that cycle, mainly focusing on critical and high‑severity security patches. I then raise a change request with details like server list, impact, maintenance window, exact commands or tools I will use, and a clear rollback plan, and get approvals from the stakeholders.​
+
+Before touching production, I always test in lower environments. I run yum check-update or dnf check-update on RHEL, apt update && apt upgrade on Ubuntu, or zypper patch on SUSE to see what will be updated, then apply those patches first on DEV/UAT servers. After patching non‑prod, I work with the app and DB teams to do basic functional testing and check logs and performance, so we reduce surprises in production.​
+
+On the day of production patching, during the approved window, I put servers into maintenance mode in monitoring tools and inform the application owners. Then I apply the patches using the distribution’s package manager or central tooling like Satellite/SUSE Manager, and for critical systems or clusters I patch and reboot one node at a time. I monitor the patch logs like /var/log/yum.log or apt/zypper logs and make sure there are no dependency issues or failed packages.​
+
+If there is a kernel or core component update, I schedule a controlled reboot. After reboot I verify that the server is reachable, the new kernel is running with uname -r, and all required services are up using systemctl status and basic application checks. I also review journalctl -b and application logs to ensure there are no new errors or performance problems.​
+
+Once the system side looks good, I ask the application and database teams to perform their business validation, like logging into the app, running sample transactions, and checking batch jobs or backups. After they sign off, I update the patch dashboard or compliance report so that security can confirm that the vulnerabilities are closed.​
+
+For rollback, I always keep a plan ready: on virtual machines we usually take a snapshot or ensure backup is recent before patching, so in case of a severe impact we can revert. For kernel‑related issues, I may boot from the previous kernel via GRUB and, if needed, downgrade problematic packages, following the vendor’s rollback recommendation. Finally, I close the change with a summary of what was patched, any issues found, and lessons learned for the next cycle.”​
