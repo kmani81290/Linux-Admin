@@ -1,0 +1,8 @@
+*"Sir, in Linux we have two common commands to search files: find and locate.
+
+    find actually goes through the directory tree in real time and applies conditions like name, size, or type. It is slower but always accurate.
+
+    locate uses a pre‑built database of filenames. It is very fast, but it may not show the latest files unless we update the database with updatedb.
+
+Now, if I want to find all files larger than 500 MB under /var and sort them by size, I can use:
+bash
