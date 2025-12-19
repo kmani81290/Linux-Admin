@@ -1,0 +1,9 @@
+*"Linux architecture is broadly divided into three layers: the Kernel, the Shell, and the User space.
+
+    The Kernel is the core of the operating system. It directly interacts with the hardware and manages critical resources like CPU scheduling, memory allocation, device drivers, and system calls. Essentially, it acts as the bridge between hardware and software.
+
+    The Shell is the interface between the user and the kernel. It interprets user commands and passes them to the kernel for execution. For example, when I type ls, the shell translates that into a system call that the kernel executes. Shells can be command-line based like Bash or graphical.
+
+    The User space is where applications and utilities run. This includes everything from text editors and compilers to services and scripts. Programs in user space don’t directly access hardware; they rely on the kernel through system calls.
+
+So, in simple terms: the kernel manages hardware, the shell provides the interface, and the user space is where applications live. This layered design ensures stability, security, and flexibility in Linux systems."*
