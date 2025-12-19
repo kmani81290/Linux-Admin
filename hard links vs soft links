@@ -1,0 +1,5 @@
+*"Sir, in Linux there are two types of links — hard link and soft link.
+
+A hard link is like giving the same file another name. Both names point to the same data. Even if I delete one name, the file is still there because the data is shared until all hard links are removed.
+
+A soft link, or symbolic link, is like a shortcut we use in Windows. It only points to the original file’s path. If the original file is deleted or moved, the soft link will break because it doesn’t have the data, only the reference.
