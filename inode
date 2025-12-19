@@ -1,0 +1,15 @@
+*"In Linux, every file is represented by an inode. An inode is a data structure that stores metadata about the file — things like ownership, permissions, timestamps, and pointers to the actual data blocks on disk. The filename itself is not stored in the inode; instead, directories map filenames to inode numbers.
+
+Now, if the inode table becomes full, the system cannot create new files even if there is free disk space available. This usually happens when there are too many small files consuming inodes. The error you’ll see is something like ‘No space left on device’ even though df shows free space.
+
+To fix this, the typical steps are:
+
+    First, identify inode usage with df -i.
+
+    Locate directories with excessive small files using find or du.
+
+    Clean up unnecessary files, logs, or cache directories.
+
+    If it’s a recurring issue, plan to reformat the filesystem with a larger inode ratio, because inode count is set at filesystem creation time.
+
+So, in short: inodes hold file metadata, running out of them blocks new file creation, and the fix is either cleanup or redesigning the filesystem with more inodes."*
