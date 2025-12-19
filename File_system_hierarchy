@@ -1,0 +1,13 @@
+*"In Linux, the file system follows a hierarchical structure starting from the root /. Some of the most important directories are:
+
+    /etc – This is where system-wide configuration files are stored. For example, network settings, user account details, and service configurations. If I want to change how a service behaves, I usually edit its config file under /etc.
+
+    /var – This holds variable data that changes frequently, such as logs, mail spools, caches, and temporary files created by applications. For instance, system logs are typically found under /var/log.
+
+    /usr – This contains user-related programs, libraries, and documentation. It’s where most of the installed software and binaries live, like /usr/bin for user commands and /usr/lib for libraries.
+
+    /home – This is the personal space for each user. Every user gets a directory under /home to store their files, documents, and preferences. For example, my files would be under /home/manikandan.
+
+    /tmp – This is used for temporary files created by applications or users. It’s usually cleared on reboot, so it’s not meant for storing anything permanent.
+
+So, in short: /etc is for configs, /var for variable data, /usr for software, /home for user files, and /tmp for temporary storage. This hierarchy keeps the system organized and makes administration predictable."*
