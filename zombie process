@@ -1,0 +1,1 @@
+"A zombie process in Linux is a process that has finished its execution, but its entry still remains in the process table because the parent has not yet collected its exit status. It doesn’t use CPU or memory, but it stays like a dead body until the parent process acknowledges it. In short, it’s a completed process waiting for the parent to clean it up."
