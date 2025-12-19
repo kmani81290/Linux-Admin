@@ -1,1 +1,4 @@
 "A zombie process in Linux is a process that has finished its execution, but its entry still remains in the process table because the parent has not yet collected its exit status. It doesn’t use CPU or memory, but it stays like a dead body until the parent process acknowledges it. In short, it’s a completed process waiting for the parent to clean it up."
+
+
+"Load average in Linux shows how busy the system is. It tells how many processes are waiting to run or running on the CPU in the last 1, 5, and 15 minutes. For example, if the load average is 2.0 on a single‑CPU machine, it means two processes are competing for the CPU. If the machine has 4 CPUs, then a load of 2.0 is actually fine because the work is spread across them."
