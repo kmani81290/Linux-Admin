@@ -1,0 +1,4 @@
+awk is a text‑processing tool in Linux. We use it mainly to read files line by line, split each line into fields, and then perform actions like printing or filtering. It is very powerful for handling structured text like logs or CSV files.
+
+For example, if I have a space‑separated file and I want to print only the first and third column, the command is:
+bash
