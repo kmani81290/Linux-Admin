@@ -1,0 +1,1 @@
+ fuser -vm /dev/sda   --> during creating vol like create pvcreate getting errors use this
